@@ -250,4 +250,121 @@ $(document).ready(function() {
 			$('.faves__item_action_drop.opened').removeClass('opened');
     }
 	});
+
+	// Получаем текущую дату
+	let today = new Date();
+	// Форматируем дату в строку dd.mm.yyyy
+	let dd = String(today.getDate()).padStart(2, '0');
+	let mm = String(today.getMonth() + 1).padStart(2, '0');
+	let yyyy = today.getFullYear();
+	let todayFormatted = dd + '.' + mm + '.' + yyyy;
+
+	$.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: 'Предыдущий',
+        nextText: 'Следующий',
+        currentText: 'Сегодня',
+        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+        'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+        'Июл','Авг','Сен','Окт','Ноя','Дек'],
+        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+        weekHeader: 'Нед',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+      };
+      $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+      $('#datepicker').datepicker({
+        dateFormat: 'dd.mm.yy',
+        minDate: 0,
+        autoclose: true
+    });
+
+	// Устанавливаем сегодняшнюю дату в поле ввода
+	$('#datepicker').val(todayFormatted);
+
+	//Стилизуем select в группе
+	$('.form__select-group').each(function() {
+		const _this = $(this),
+			selectOption = _this.find('option'),
+			selectOptionLength = selectOption.length,            
+			duration = 450; 
+	
+		_this.hide();
+		_this.wrap('<div class="select"></div>');
+		$('<div>', {
+			class: 'new-select',
+		}).insertAfter(_this);
+		$('<span>', {
+			text: _this.children('option:disabled').text()
+		}).appendTo('.new-select');
+	
+		const selectHead = _this.next('.new-select');
+		const selectHeadBlock = selectHead.find('span');
+		$('<div>', {
+			class: 'new-select__list'
+		}).insertAfter(selectHead);
+	
+		const selectList = selectHead.next('.new-select__list');
+		if(selectOptionLength > 1) {
+			for (let i = 1; i < selectOptionLength; i++) {
+				$('<div>', {
+					class: 'new-select__item',
+					html: $('<span>', {
+						text: selectOption.eq(i).text()
+					})
+				})
+				.attr('data-value', selectOption.eq(i).val())
+				.appendTo(selectList);
+			}
+	
+		} else if (selectOptionLength == 1) {
+			selectHead.addClass('empty');            
+		}
+	
+		const createCollection = $('#form__create');
+		$(createCollection).on('submit',function(event) {
+			event.preventDefault();
+		});
+	
+		const selectItem = selectList.find('.new-select__item');
+		selectList.slideUp(0);
+	
+		// Функция для обработки открытия/закрытия селекта
+		function toggleSelect() {
+			if(!selectHead.hasClass('empty')) {
+				if (!selectHead.hasClass('on')) {
+					selectHead.addClass('on');
+					selectList.slideDown(duration);
+	
+					selectItem.on('click', function() {
+						let chooseItem = $(this).data('value');
+	
+						$('select').val(chooseItem).attr('selected', 'selected');
+						selectHeadBlock.text($(this).find('span').text());
+	
+						selectList.slideUp(duration);
+						selectHead.removeClass('on');
+					});
+	
+				} else {
+					selectHead.removeClass('on');
+					selectList.slideUp(duration);
+				}
+			}
+		}
+	
+		// Обработчик клика на сам селект
+		selectHead.on('click', toggleSelect);
+	
+		// Добавляем обработчик клика на .form__group-info
+		const groupInfo = _this.closest('.form__field').find('.form__group-info');
+		groupInfo.on('click', toggleSelect);
+	});
 });
