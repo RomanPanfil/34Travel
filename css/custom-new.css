@@ -181,6 +181,10 @@
     display: block;
 }
 
+.subscription__payment_block {
+    margin-bottom: 60px;
+}
+
 @media screen and (max-width: 780px) {
     .container-grid .arrows__wrap-mid {
         max-width: 340px;
