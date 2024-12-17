@@ -2041,22 +2041,22 @@ header {
 }
 
     .rubric__subscription_blur {
-        /* height: 340px;
+        height: 340px;
         width: 100%;
         margin-top: -340px;
         display: block;
         background: rgb(226,226,226);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%); */
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%);
         padding-top: 50px;
     }
 
-    /* .rubric__subscription_blur span {
+    .rubric__subscription_blur span {
         height: 340px;
         width: 100%;
         display: block;
         backdrop-filter: blur(1px);
         background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(226,226,226,1) 100%);
-    } */
+    }
 
     .rubric__subscription .container {
         max-width: 940px;
