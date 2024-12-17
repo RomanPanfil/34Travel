@@ -185,6 +185,20 @@
     margin-bottom: 60px;
 }
 
+.arrows_item_left {
+    display: block;
+    text-decoration: none;
+    
+}
+
+.arrows__header {
+    line-height: 1.2;
+}
+
+.arrows_item svg {    
+    margin-bottom: 6px;
+}
+
 @media screen and (max-width: 780px) {
     .container-grid .arrows__wrap-mid {
         max-width: 340px;
