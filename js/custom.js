@@ -207,14 +207,25 @@ $(document).ready(function() {
 
 	//Добавляем желтый бэкграунд для чекбоксов подписки
 
-	$('.subscription__tariffs_check .custom-radio').each(function() {
-		$(this).click(function(){
-			$('.subscription__tariffs_check .custom-radio').each(function() {
-				$('.subscription__tariffs_item').removeClass('active');
-			})
-			$(this).closest('.subscription__tariffs_item').addClass('active');
-		});
-	})
+	// $('.subscription__tariffs_check .custom-radio').each(function() {
+	// 	$(this).click(function(){
+	// 		$('.subscription__tariffs_check .custom-radio').each(function() {
+	// 			$('.subscription__tariffs_item').removeClass('active');
+	// 		})
+	// 		$(this).closest('.subscription__tariffs_item').addClass('active');
+	// 	});
+	// })
+
+	$('.subscription__tariffs_item').click(function(){
+		// Сначала убираем класс active со всех карточек
+		$('.subscription__tariffs_item').removeClass('active');
+		
+		// Добавляем класс active только на текущую карточку
+		$(this).addClass('active');
+		
+		// Находим и отмечаем радио-кнопку внутри этой карточки
+		$(this).find('.custom-radio').prop('checked', true);
+	});
 
 
 	//Открываем скрытый текст в подписках

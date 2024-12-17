@@ -199,6 +199,12 @@
     margin-bottom: 6px;
 }
 
+.subscription__tariffs_item:hover > div {
+    background: #F9E855;
+    border: 3px solid #D5CE1A;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 780px) {
     .container-grid .arrows__wrap-mid {
         max-width: 340px;
