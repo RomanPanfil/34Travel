@@ -205,9 +205,41 @@
     cursor: pointer;
 }
 
+.post-img {
+    position: relative;
+}
+
+.post-img .post-meta__faves {
+    top: 18px;
+    left: -80px;
+}
+
+.full-width {
+    position: relative;
+}
+
+.full-width  .post-meta__faves {
+    top: 0;
+    left: -80px;
+}
+
+@media screen and (max-width: 1140px) {
+    .full-width  .post-meta__faves {        
+        left: -60px;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .container-grid .arrows__wrap-mid {
         max-width: 340px;
+    }
+
+    .post-img .post-meta__faves {      
+        left: -60px;
+    }
+
+    .full-width  .post-meta__faves {        
+        left: -60px;
     }
 }
 
