@@ -2041,17 +2041,17 @@ header {
 }
 
     .rubric__subscription_blur {
-        height: 340px;
+        height: 290px;
         width: 100%;
-        margin-top: -340px;
+        margin-top: -290px;
         display: block;
         background: rgb(226,226,226);
         background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%);
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
 
     .rubric__subscription_blur span {
-        height: 340px;
+        height: 290px;
         width: 100%;
         display: block;
         backdrop-filter: blur(1px);
