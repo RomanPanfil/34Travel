@@ -2122,10 +2122,10 @@ header {
             border: 3px solid #D5CE1A;
         }
 
-        .subscription__tariffs_item:hover > div {
+        /* .subscription__tariffs_item:hover > div {
             background: #C9C9C9;
             border: 3px solid #C9C9C9;
-        }
+        } */
 
         .subscription__tariff_title {
             min-height: 122px;

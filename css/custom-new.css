@@ -199,10 +199,14 @@
     margin-bottom: 6px;
 }
 
-.subscription__tariffs_item:hover > div {
+/* .subscription__tariffs_item:hover > div {
     background: #F9E855;
     border: 3px solid #D5CE1A;
     cursor: pointer;
+} */
+.subscription__tariffs_item.active > div {
+    background: #F9E855;
+    border: 3px solid #D5CE1A;   
 }
 
 .post-img {
@@ -221,6 +225,14 @@
 .full-width  .post-meta__faves {
     top: 0;
     left: -80px;
+}
+
+@media screen and (min-width: 992px) {
+    .subscription__tariffs_item:hover > div {
+        background: #F9E855;
+        border: 3px solid #D5CE1A;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1140px) {
