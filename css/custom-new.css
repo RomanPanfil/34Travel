@@ -237,6 +237,79 @@
     align-items: center;
 }
 
+.form_wrap_inside_margin {
+    margin-bottom: 80px;
+}
+
+.form_section_text .form_short-text_left {   
+    font-size: 18px;
+    line-height: 26px;
+    line-height: 1.44;
+    padding-bottom: 12px;
+}
+
+.form_short-text_center {
+    text-align: center !important;
+}
+
+.form_actions_wrapper {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.form_actions_link {
+    font-family: 'Spectral', serif;   
+    font-weight: 400;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form-link_margin {
+    margin-bottom: 50px;
+}
+
+.form__information_warning {
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.27;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.form_wrap_inside_wide {
+    max-width: 580px;
+}
+
+.form_simple_link.form_short-text_right {
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 10px;    
+    text-decoration-line: underline;
+    color: #949494;
+    padding-top: 8px;
+    transition: text-decoration 0.3s;
+}
+
+.form_simple_link.form_short-text_right:hover {
+    text-decoration: none;
+}
+
+.form_short-text_right {
+    display: inline-block;
+    text-align: right !important;
+    width: 100%;
+}
+
+.form_section_margin_none {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
