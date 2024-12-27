@@ -143,7 +143,7 @@ $(document).ready(function() {
 			},
 			messages: {
 				email: {
-					required: "Введите Email",
+					required: "Введите E-mail",
 					minlength: "Поле должно быть более 5-ти символов",
 					email: "Некорректно введен Email"
 				},
