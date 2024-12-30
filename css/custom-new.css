@@ -310,7 +310,7 @@
     margin-bottom: 0;
 }
 
-.form_link {  
+.form_wrap button, .form_link, .form_wrap a.form_link_short {  
     background-color: #E2E2E2;
 }
 
@@ -324,6 +324,10 @@
 
 .form_promo_error {
     color: #C86F6F;
+}
+
+.rubric__subscription_blur span { 
+    backdrop-filter: blur(0px);
 }
 
 @media screen and (min-width: 992px) {
