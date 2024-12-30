@@ -330,6 +330,46 @@
     backdrop-filter: blur(0px);
 }
 
+#form_edit_one .new-select {
+    width: 100%;
+}
+
+.edit-collection-types {    
+    margin-bottom: 4px;
+}
+
+.edit-collection-types .square-radio {
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.edit-collection-type label {   
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #020202;
+    margin-left: 12px;
+}
+
+.edit-collection-types-icons {
+    transform: translateY(2px);
+}
+
+.form__label_dark {
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+#form_edit_one .square-radio input[type="radio"] {
+    flex: 0 0 20px;
+}
+
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
