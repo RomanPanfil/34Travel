@@ -185,8 +185,7 @@
     margin-bottom: 60px;
 }
 
-.arrows_item_left {
-    display: block;
+.arrows_item_left { 
     text-decoration: none;
     
 }
