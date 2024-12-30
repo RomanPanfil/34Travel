@@ -373,6 +373,11 @@
     text-transform: none;   
 }
 
+.form_text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -419,5 +424,9 @@
 
     .container-grid .arrows__wrap-mid {
         display: none;
+    }
+
+    .form_text {
+       font-size: 18px;
     }
 }
