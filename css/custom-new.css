@@ -377,6 +377,15 @@
     overflow: hidden;
 }
 
+.b-news__short__block > a {
+    position: relative;
+}
+
+.subscription__terms .custom-checkbox + label::before {
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
