@@ -229,6 +229,7 @@
 .form__info_wrap .form_status {
     margin-top: -5px;
     margin-bottom: -5px;
+    text-transform: none; 
 }
 
 .form__label {
@@ -386,6 +387,91 @@
     height: 20px;
 }
 
+.ui-widget.ui-widget-content {
+    font-family: 'RobotoMono', sans-serif;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 0;
+}
+
+.ui-widget-header {
+    background: none;
+    border: none;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25; 
+    color: #020202;
+}
+
+.ui-datepicker {
+    padding-top: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-bottom: 6px;
+}
+
+.ui-datepicker table {  
+    margin-bottom: 26px;   
+}
+
+.ui-datepicker td {
+    padding: 1.5px;
+}
+
+.ui-datepicker th { 
+    font-weight: 500;
+    font-size: 14px;
+    color: #020202;
+    padding: .3em;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #CECECE;
+    background: #CECECE;
+    color: #020202;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #F9E855;
+    color: #020202;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 1;   
+}
+
+.ui-state-disabled .ui-state-default {
+    color: #A2A2A2;
+    background: transparent;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border-color: #020202;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    background-image: url('data:image/svg+xml,<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.67525 6.27833L6.50689 12.3281L4.04985 12.3281L0.218154 6.27833L4.04981 0.228555L6.50689 0.228551L2.67525 6.27833Z" fill="black"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    background-image: url('data:image/svg+xml,<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.88139 6.27833L0.049747 12.3281L2.50679 12.3281L6.33849 6.27833L2.50683 0.228555L0.0497478 0.228551L3.88139 6.27833Z" fill="black"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-datepicker-prev.ui-state-disabled, .ui-datepicker-next.ui-state-disabled {
+    opacity: 0.3;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -436,5 +522,22 @@
 
     .form_text {
        font-size: 18px;
+    }
+
+    .ui-datepicker {
+        padding-top: 6px;
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 76vw;
+    }
+    
+    .ui-datepicker .ui-datepicker-header {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+    
+    .ui-datepicker table {  
+        margin-bottom: 6px;       
     }
 }
