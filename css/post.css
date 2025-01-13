@@ -1,0 +1,132 @@
+.b-main.additional-posts,
+.boxed .b-list-posts {
+  width: 1060px;
+  padding: 30px 60px 0;
+}
+
+.additional-posts .post-grid .post-item.small-width {
+  width: 33.333333%;
+}
+
+.additional-posts .post-grid .post-item.small-width .img-wrap img {
+  width: 100%;
+}
+
+.additional-posts .b-news__short__list {
+  width: auto;
+  font-size: 0;
+  margin: 0 -10px;
+}
+
+.additional-posts .b-news__short__list .b-news__short__block {
+  width: 33.33333%;
+  font-size: 16px;
+  margin-left: 0;
+  padding: 0 10px;
+  margin-right: 0;
+}
+
+.additional-posts .b-news__short__list .b-news__short__big {
+  width: 66.666666%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.additional-posts .b-news__short__list .b-news__short__big a:before {
+  left: 10px;
+  right: 10px;
+  width: auto;
+}
+
+.inner .b-list-posts {
+  padding: 30px 60px 0;
+}
+
+.inner .b-list-posts .b-news__short__list {
+  width: auto;
+  font-size: 0;
+  margin: 0 -10px;
+}
+
+.inner .b-list-posts .b-news__short__list .b-news__short__block {
+  width: 33.333333%;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.b-comment__simple {
+  min-height: 124px;
+}
+
+.b-comment__avatar {
+  width: 75px;
+  height: 75px;
+}
+
+.b-post__info__detail {
+  width: calc(100% - 210px);
+}
+
+
+
+@media (max-width: 1250px) {
+  .post-container {
+    max-width: 980px;
+  }
+
+  .post-container .post-grid .post-item:before {
+    right: 10px;
+    left: 10px;
+  }
+
+  .post-container .post-grid .post-item .post-short-info {
+    width: 100%;
+  }
+
+  .post-container .post-grid .post-item.medium-width:before {
+    right: 10px;
+    left: 10px;
+  }
+
+  .post-container .post-grid .post-item.medium-width .post-short-info {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .post-container .post-grid .post-item.small-width .post-short-info {
+    margin-top: 0;
+  }
+
+  .b-main.additional-posts,
+  .boxed .b-list-posts {
+    max-width: 100%;
+  }
+
+  .goUp {
+    left: 44%;
+  }
+}
+
+@media (max-width: 1144px) {
+    .goUp {
+        left: 42%;
+      }
+}
+
+@media (max-width: 767px) {
+  .additional-posts .b-news__short__list .b-news__short__block {
+    width: 50%;
+  }
+
+  .additional-posts .b-news__short__list .b-news__short__big {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .additional-posts .b-news__short__list .b-news__short__block {
+    width: 100%;
+  }  
+}
