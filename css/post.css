@@ -125,6 +125,12 @@
   }
 }
 
+@media (max-width: 640px) {
+    .b-main.additional-posts, .boxed .b-list-posts {
+        padding: 0 16px;
+    }   
+}
+
 @media (max-width: 540px) {
   .additional-posts .b-news__short__list .b-news__short__block {
     width: 100%;
