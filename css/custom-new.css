@@ -473,6 +473,16 @@
     opacity: 0.3;
 }
 
+.b-post__text__wrapper {
+    position: relative;
+}
+
+.b-post__text__wrapper > .post-meta__faves {
+    bottom: unset;
+    top: 0;
+    left: -230px;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -484,6 +494,16 @@
 @media screen and (max-width: 1140px) {
     .full-width  .post-meta__faves {        
         left: -60px;
+    }
+
+    .b-post__text__wrapper > .post-meta__faves {        
+        left: -196px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .b-post__text__wrapper > .post-meta__faves {        
+        left: -50px;
     }
 }
 
