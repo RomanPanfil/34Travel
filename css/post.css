@@ -74,6 +74,10 @@
   display: block;
 }
 
+.b-main {
+   box-sizing: content-box; 
+}
+
 
 @media (max-width: 1250px) {
   .post-container {

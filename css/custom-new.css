@@ -488,6 +488,16 @@
     max-width: 100%;
 }
 
+.b-post__image {
+    position: relative;
+}
+
+.b-post__image .post-meta__faves {   
+    bottom: unset;
+    top: 0;
+    left: -80px; 
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -523,6 +533,16 @@
 
     .full-width  .post-meta__faves {        
         left: -60px;
+    }
+
+    .b-post__image .post-meta__faves {   
+        left: -50px; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .b-post__image .post-meta__faves {   
+        margin-bottom: 8px;
     }
 }
 
