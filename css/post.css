@@ -78,7 +78,7 @@
    box-sizing: content-box; 
 }
 
-.post-body [class*="col-"] { 
+.post-body .row[class*="col-"] { 
   max-width: none !important;
   flex: auto !important;
   -webkit-box-flex: 1 !important;
