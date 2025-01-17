@@ -74,8 +74,8 @@
   display: block;
 }
 
-.b-main {
-   box-sizing: content-box; 
+.b-main:has(.b-content) {
+  box-sizing: content-box; 
 }
 
 .post-body .row[class*="col-"] { 
