@@ -78,6 +78,13 @@
    box-sizing: content-box; 
 }
 
+.post-body [class*="col-"] { 
+  max-width: none !important;
+  flex: auto !important;
+  -webkit-box-flex: 1 !important;
+  -ms-flex: auto !important;
+}
+
 
 @media (max-width: 1250px) {
   .post-container {
