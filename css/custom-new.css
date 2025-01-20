@@ -326,6 +326,7 @@
     font-size: 12px;
     color: #C86F6F;
     font-family: 'RobotoMono', sans-serif;
+    line-height: 1.67;
 }
 
 .rubric__subscription_blur span { 
