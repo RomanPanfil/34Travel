@@ -145,7 +145,7 @@
 
 @media (max-width: 640px) {
     .b-main.additional-posts, .boxed .b-list-posts {
-        padding: 0 16px;
+      padding: 30px 16px 0;
     }   
 }
 
