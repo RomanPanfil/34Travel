@@ -410,6 +410,7 @@
     padding-top: 8px;
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 272px;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -439,6 +440,10 @@
     color: #020202;
     font-weight: 500;
     font-size: 12px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {   
+    padding: 2.5px 3px;   
 }
 
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
@@ -497,6 +502,18 @@
     bottom: unset;
     top: 0;
     left: -80px; 
+}
+
+.rubric__subscription .container {
+    max-width: 920px;    
+}
+
+.faves__item_wrap:hover .faves__item__header span {
+    border-bottom: none !important;
+}
+
+.collections__top .collections__top_link {   
+    font-weight: 700;   
 }
 
 @media screen and (min-width: 992px) {

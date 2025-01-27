@@ -295,10 +295,29 @@ $(document).ready(function() {
         dateFormat: 'dd.mm.yy',
         minDate: 0,
         autoclose: true
-    });
+    });	
 
 	// Устанавливаем сегодняшнюю дату в поле ввода
 	$('#datepicker').val(todayFormatted);
+
+	// Функция для обновления позиции datepicker
+	function updateDatepickerPosition() {
+		const $input = $('#datepicker');
+		const datepicker = $input.data('datepicker');
+		
+		// Если календарь открыт, переопределяем его позицию
+		if (datepicker && datepicker.dpDiv.is(':visible')) {
+			datepicker.dpDiv.position({
+				my: 'left top',
+				at: 'left bottom',
+				of: $input
+			});
+		}
+	}
+
+	$(window).on('resize', function() {
+		updateDatepickerPosition();
+	});
 
 	//Стилизуем select в группе
 	$('.form__select-group').each(function() {
