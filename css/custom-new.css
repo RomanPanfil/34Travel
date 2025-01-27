@@ -538,6 +538,14 @@
     .b-post__text__wrapper > .post-meta__faves {        
         left: -50px;
     }
+
+    .b-news__short__faves {
+        display: none !important;
+    }
+
+    .b-news__short__block:hover .b-news__short__faves {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -560,6 +568,10 @@
 
 @media screen and (max-width: 640px) {
     .b-post__image .post-meta__faves {   
+        margin-bottom: 8px;
+    }
+
+    .post-meta__faves {   
         margin-bottom: 8px;
     }
 }

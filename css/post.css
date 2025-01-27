@@ -85,6 +85,9 @@
   -ms-flex: auto !important;
 }
 
+.post-body:has(+ .rubric__subscription) .b-post__geo {
+  display: none;
+}
 
 @media (max-width: 1250px) {
   .post-container {
