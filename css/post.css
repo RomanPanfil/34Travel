@@ -80,6 +80,7 @@
 
 .post-body .row[class*="col-"] { 
   max-width: none !important;
+  width: unset !important;
   flex: auto !important;
   -webkit-box-flex: 1 !important;
   -ms-flex: auto !important;
