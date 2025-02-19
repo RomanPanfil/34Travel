@@ -397,4 +397,34 @@ $(document).ready(function() {
 		const groupInfo = _this.closest('.form__field').find('.form__group-info');
 		groupInfo.on('click', toggleSelect);
 	});
+
+	// цвет градиента пейвола в зависимости от цвета post-body post-bg
+	(function() {
+		const postbody = document.querySelector('.post-body.post-bg');
+		
+		if(!postbody) return		
+		
+		let bgColor = postbody.style.backgroundColor;
+		
+		if (!bgColor) {
+			bgColor = window.getComputedStyle(postbody).backgroundColor;
+		}
+	
+		const rubricSubscription = document.querySelector('.rubric__subscription');
+		if(rubricSubscription) {
+			rubricSubscription.style.backgroundColor = bgColor;
+		}
+		
+		const rubricSubscriptionBlur = document.querySelector('.rubric__subscription_blur');
+		if (rubricSubscriptionBlur) {			
+			rubricSubscriptionBlur.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, ${bgColor} 100%)`;
+		}
+
+		
+		const rubricSubscriptionBlurSpan = document.querySelector('.rubric__subscription_blur span');
+		if (rubricSubscriptionBlurSpan) {
+			rubricSubscriptionBlurSpan.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, ${bgColor} 100%)`;
+		}		
+		
+	})();
 });
