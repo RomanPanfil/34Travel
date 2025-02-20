@@ -2166,6 +2166,11 @@ header nav > ul .has-child.nav-visible .arrow:after {
   padding: 30px 60px 0;
 }
 
+.boxed .b-main.additional-posts {
+  width: 1020px;
+  padding: 30px 40px 0;
+}
+
 .additional-posts {
   background: #d9d9d9;
 }
@@ -2751,6 +2756,10 @@ footer .logo {
   .boxed .b-list-posts {
     max-width: 100%;
   }
+
+  .boxed .b-main.additional-posts {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -2771,6 +2780,13 @@ footer .logo {
 
   .b-main.additional-posts,
   .boxed .b-list-posts {
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 0;
+    padding: 30px 20px 0;
+  }
+
+  .boxed .b-main.additional-posts {
     width: 100%;
     min-height: 0;
     margin-bottom: 0;
@@ -3545,6 +3561,11 @@ footer .logo {
 
   .b-main.additional-posts,
   .boxed .b-list-posts {
+    padding: 30px 20px 0;
+    width: 100%;
+  }
+
+  .boxed .b-main.additional-posts {
     padding: 30px 20px 0;
     width: 100%;
   }

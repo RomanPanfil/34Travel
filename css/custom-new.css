@@ -538,7 +538,50 @@
     padding-bottom: 50px;
     line-height: 1.5;
 }
+/* boxed start */
+.boxed #wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
 
+.boxed .header_container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.boxed .header__projects {
+    display: none;
+}
+
+.boxed header nav {
+    padding-top: 24px;    
+}
+
+.boxed header nav > ul > li > a {
+    font-size: 22px;
+}
+
+.boxed header .logo {
+    width: 120px;
+    height: 80px;
+    background-size: contain;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.boxed .header__desktop_logo {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.boxed .header__links::before {  
+    left: -2px;
+}
+
+.boxed .header__links {   
+    padding-left: 30px;
+}
+/* boxed end */
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
