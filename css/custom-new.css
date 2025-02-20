@@ -581,6 +581,11 @@
 .boxed .header__links {   
     padding-left: 30px;
 }
+
+.header__big_right {
+    width: unset;
+    flex-grow: 1;
+}
 /* boxed end */
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
