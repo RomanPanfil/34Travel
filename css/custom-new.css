@@ -587,6 +587,14 @@
     flex-grow: 1;
 }
 /* boxed end */
+.header_container {   
+    margin: 0 auto 0;
+    padding-bottom: 30px;
+}
+.header__links::before {  
+    width: 22px;
+    height: 65px;  
+}
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
