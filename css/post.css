@@ -4,6 +4,11 @@
   padding: 30px 60px 0;
 }
 
+.boxed .b-main.additional-posts {
+  width: 1020px;
+  padding: 30px 40px 0;
+}
+
 .additional-posts .post-grid .post-item.small-width {
   width: 33.333333%;
 }
@@ -123,6 +128,10 @@
     max-width: 100%;
   }
 
+  .boxed .b-main.additional-posts {
+    max-width: 100%;
+  }
+
   .goUp {
     left: 44%;
   }
@@ -132,6 +141,15 @@
     .goUp {
         left: 42%;
       }
+}
+
+@media screen and (max-width: 1080px) {
+  .boxed .b-main.additional-posts {
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 0;
+    padding: 30px 20px 0;
+  }
 }
 
 @media (max-width: 767px) {
