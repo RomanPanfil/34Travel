@@ -592,8 +592,10 @@
     padding-bottom: 30px;
 }
 .header__links::before {  
+    background-image: url('data:image/svg+xml,<svg width="22" height="73" viewBox="0 0 22 73" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0V70L11 57.7193L21 70V35V0" stroke="black" stroke-width="2"/></svg>');
     width: 22px;
-    height: 65px;  
+    height: 73px;  
+    top: -22px;
 }
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
