@@ -41,7 +41,7 @@
     opacity: 0.8;
 } 
 
-.square-radio input[type="radio"] {
+.square-radio input[type="radio"], .square-radio input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     padding: 0 !important;
@@ -54,7 +54,7 @@
     opacity: 1;
 }
 
-.square-radio input[type="radio"]:checked::before {
+.square-radio input[type="radio"]:checked::before, .square-radio input[type="checkbox"]:checked::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -377,7 +377,7 @@
     margin-bottom: 12px;
 }
 
-#form_edit_one .square-radio input[type="radio"] {
+#form_edit_one .square-radio input[type="radio"], #form_edit_one .square-radio input[type="checkbox"] {
     flex: 0 0 20px;
 }
 
