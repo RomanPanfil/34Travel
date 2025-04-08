@@ -402,14 +402,23 @@ $(document).ready(function() {
 	(function() {
 		const postbody = document.querySelector('.post-body.post-bg');
 		
-		if(!postbody) return		
+		if(!postbody) return;
 		
 		let bgColor = postbody.style.backgroundColor;
 		
 		if (!bgColor) {
 			bgColor = window.getComputedStyle(postbody).backgroundColor;
 		}
-	
+		
+		// Проверяем, является ли цвет белым (в разных форматах)
+		if (bgColor === 'white' || 
+			bgColor === '#fff' || 
+			bgColor === '#ffffff' || 
+			bgColor === 'rgb(255, 255, 255)' || 
+			bgColor === 'rgba(255, 255, 255, 1)') {
+			return;
+		}
+		
 		const rubricSubscription = document.querySelector('.rubric__subscription');
 		if(rubricSubscription) {
 			rubricSubscription.style.backgroundColor = bgColor;
@@ -419,12 +428,10 @@ $(document).ready(function() {
 		if (rubricSubscriptionBlur) {			
 			rubricSubscriptionBlur.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, ${bgColor} 100%)`;
 		}
-
-		
+	
 		const rubricSubscriptionBlurSpan = document.querySelector('.rubric__subscription_blur span');
 		if (rubricSubscriptionBlurSpan) {
-			rubricSubscriptionBlurSpan.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, ${bgColor} 100%)`;
+			rubricSubscriptionBlurSpan.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) -30%, ${bgColor} 100%)`;
 		}		
-		
 	})();
 });

@@ -287,8 +287,8 @@
 .form__information_warning {
     font-family: 'Spectral', serif;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 1.27;
+    font-size: 18px;
+    line-height: 28px;
     margin-bottom: 45px;
     text-align: center;
 }
@@ -614,6 +614,16 @@
 .subscriptions__item {  
     font-size: 18px;
     line-height: 28px;
+}
+.bottom__cookies_text {
+    color: #000;
+}
+.bottom__cookies button {
+    color: #000;
+    border: 1px soloid #000;
+}
+.form_wrap .error {
+    color: #C86F6F;
 }
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
