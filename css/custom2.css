@@ -1094,7 +1094,7 @@ header {
 
 /* ------------------ Footer ------------------ */
 .footer {
-    margin-top: 0 !important;
+    /* margin-top: 0 !important; */
     padding: 50px 0 70px !important;
     background-color: #e2e2e2 !important;
     border-top: 1px solid #C3C3C3;

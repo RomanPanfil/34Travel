@@ -32,7 +32,7 @@
 
 .square-radio {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 8px;
     transition: opacity 0.3s;
 }
@@ -48,10 +48,12 @@
     margin: 0;
     width: 20px;
     height: 20px;
+    flex: 0 0 20px;
     border: 2px solid #333;
     position: relative;
     cursor: pointer;
     opacity: 1;
+    margin-top: 4px;
 }
 
 .square-radio input[type="radio"]:checked::before, .square-radio input[type="checkbox"]:checked::before {
@@ -214,6 +216,10 @@
     position: relative;
 }
 
+.boxed .post-meta__faves {
+    left: -43px;
+}
+
 .post-img .post-meta__faves {
     top: 0;
     left: -80px;
@@ -364,6 +370,13 @@
     line-height: 20px;
     color: #020202;
     margin-left: 12px;
+}
+
+.edit-collection-type label span {
+    display: block;   
+    font-size: 12px;
+    line-height: 1.67;
+    color: #ABABAB;
 }
 
 .edit-collection-types-icons {
@@ -620,11 +633,38 @@
 }
 .bottom__cookies button {
     color: #000;
-    border: 1px soloid #000;
+    border: 1px solid #000;   
 }
 .form_wrap .error {
     color: #C86F6F;
 }
+.bottom__cookies {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    height: unset;
+    width: unset;
+    left: 0;
+    right: 0;
+}
+.bottom__cookies_btns {
+    display: flex;
+    gap: 23px;
+}
+.bottom__cookies_btns button {
+    min-width: 131px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+    text-transform: unset;
+    width: auto;    
+}
+.bottom__cookies_text {
+    margin-right: 25px;
+    line-height: 1.67;
+}
+                                        
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -657,6 +697,12 @@
     }
 }
 
+@media screen and (max-width: 860px) {
+    .bottom__cookies_text {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .container-grid .arrows__wrap-mid {
         max-width: 340px;
@@ -681,6 +727,10 @@
 
     .user__gift_email_subscriptions {
         padding-bottom: 44px;
+    }
+
+    .bottom__cookies_btns button {
+        min-width: auto;
     }
 }
 
@@ -751,5 +801,14 @@
 
     .user__gift_email_subscriptions {
         padding-bottom: 36px;
+    }
+
+    .bottom__cookies_text {
+        max-width: unset;
+        text-align: unset;
+    }
+
+    .form__edit_wrap {
+        padding: 50px 0 43px !important;
     }
 }
