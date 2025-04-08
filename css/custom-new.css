@@ -133,6 +133,8 @@
 
 .form__group .new-select__list {
     background-color: #E2E2E2;
+    overflow-y: auto;
+    touch-action: pan-y;
 }
 
 .form__group .new-select__item:hover span{
