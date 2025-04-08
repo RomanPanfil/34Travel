@@ -597,6 +597,13 @@
     height: 73px;  
     top: -22px;
 }
+.subscription__terms .custom-checkbox:not(:checked) + label::before {
+    border-color: #C86F6F;
+}
+.paymentBtn.paymentDisable {
+    opacity: 0.5;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
