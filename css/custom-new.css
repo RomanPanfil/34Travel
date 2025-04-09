@@ -135,6 +135,8 @@
     background-color: #E2E2E2;
     overflow-y: auto;
     touch-action: pan-y;
+    width: 100%;
+    z-index: 10;
 }
 
 .form__group .new-select__item:hover span{
@@ -665,6 +667,14 @@
 .bottom__cookies_text {
     margin-right: 25px;
     line-height: 1.67;
+}
+.subscription__tariffs_item.blocked_subscription {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.subscription__tariffs_item .subscription__tariffs_price {
+    text-transform: uppercase;
+    font-style: italic;
 }
                                         
 @media screen and (min-width: 992px) {
