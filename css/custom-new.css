@@ -642,6 +642,9 @@
 .form_wrap .error {
     color: #C86F6F;
 }
+.form__group.subscription__select + .error {
+    transform: translateY(-20px);
+}
 .bottom__cookies {
     padding-left: 40px;
     padding-right: 40px;
