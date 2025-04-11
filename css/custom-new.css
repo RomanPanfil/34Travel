@@ -350,6 +350,9 @@
     line-height: 1.67;
 }
 
+.form_section:has(+ .form_short-text.form_short-text_margin) {
+    margin-bottom: 24px;
+}
 .rubric__subscription_blur span { 
     backdrop-filter: blur(0px);
 }
@@ -622,8 +625,8 @@
     height: 73px;  
     top: -22px;
 }
-.subscription__terms .custom-checkbox:not(:checked) + label::before {
-    border-color: #C86F6F;
+.subscription__terms .custom-checkbox:not(:checked) + label::before {   
+    box-shadow: 0 0 0 2px #C86F6F;
 }
 .paymentBtn.paymentDisable {
     opacity: 0.5;
