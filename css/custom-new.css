@@ -682,7 +682,11 @@
     text-transform: uppercase;
     font-style: italic;
 }
-                                        
+        
+.post-meta__faves_static {
+    position: static !important;
+    margin-right: 40px !important;
+}
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -698,6 +702,18 @@
 
     .b-post__text__wrapper > .post-meta__faves {        
         left: -196px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info-box {
+        flex-direction: column;
+    }
+    .post-meta__faves_static {
+        order: 1;
+        margin-top: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 
