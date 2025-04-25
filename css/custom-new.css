@@ -687,6 +687,39 @@
     position: static !important;
     margin-right: 40px !important;
 }
+.info-box.info-box__separated {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.post-meta .info-box.info-box__separated p,
+.post-meta .info-box.info-box__separated time
+.post-meta .info-box.info-box__separated .b-news__magazine a{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.info-box.info-box__separated {
+    row-gap: 7px;    
+}
+.info-box.info-box__separated .post-meta-item {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;    
+}
+
+.info-box.info-box__separated .post-meta-item .rubric {
+    max-width: unset;
+    width: auto;
+    margin-left: 0;
+}
+.post-meta .info-box.info-box__separated .rubric,
+.post-meta .info-box.info-box__separated time,
+.post-meta .info-box.info-box__separated .author {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -710,8 +743,8 @@
         flex-direction: column;
     }
     .post-meta__faves_static {
-        order: 1;
-        margin-top: 40px;
+        margin-bottom: 16px;
+        position: static !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -765,6 +798,21 @@
 
     .bottom__cookies_btns button {
         min-width: auto;
+    } 
+
+    .info-box.info-box__separated .post-meta-item {     
+        gap: 16px;
+    }
+
+    .info-box.info-box__separated .post-meta__faves {
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+    }
+
+    .info-box.info-box__separated .post-meta__faves svg {
+        width: 16px;
+        height: 16px;     
     }
 }
 
@@ -775,6 +823,7 @@
 
     .post-meta__faves {   
         margin-bottom: 8px;
+        margin-top: 0;
     }
 
     .user__gift_email {
