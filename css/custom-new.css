@@ -649,9 +649,14 @@
     height: 73px;  
     top: -22px;
 }
-.subscription__terms .custom-checkbox:not(:checked) + label::before {   
-    box-shadow: 0 0 0 2px #C86F6F;
+.subscription__terms.redBorder .custom-checkbox + label::before {
+    box-shadow: 0 0 0 2px #C86F6F;  
 }
+
+/* .subscription__terms .custom-checkbox:not(:checked) + label::before {   
+    box-shadow: 0 0 0 2px #C86F6F;
+} */
+
 .paymentBtn.paymentDisable {
     opacity: 0.5;
 }
