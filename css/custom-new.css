@@ -96,6 +96,48 @@
     cursor: pointer;
 }
 
+.subscription__terms.subscription__terms_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}  
+
+.subscription__terms_checkbox {
+    .custom-checkbox-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+      
+    .custom-checkbox {
+        display: none;
+    }
+      
+    .subscription-radio {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 20px;
+        border: 2px solid #000;
+        background-color: #fff;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+      
+    .custom-checkbox:checked + .subscription-radio::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;   
+        background-color: #6b9670;
+    }
+}
+
 .form__label.form__label_description {
     font-family: 'RobotoMono', sans-serif;
     font-weight: 500;
