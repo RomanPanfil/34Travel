@@ -81,6 +81,11 @@
     margin-top: 4px;
 }
 
+.square-radio.edit-collection-type input[type="radio"], .square-radio input[type="checkbox"] {
+    margin-top: 0;
+}
+
+
 .square-radio input[type="radio"]:checked::before, .square-radio input[type="checkbox"]:checked::before {
     content: "";
     position: absolute;
@@ -314,6 +319,10 @@
 .form__label {
     display: flex;
     align-items: center;
+}
+
+.form__label_black, .form__label_black span {
+   line-height: 167%;
 }
 
 .form_wrap_inside_margin {
@@ -793,6 +802,30 @@
     margin-bottom: 0;
 }
 
+.collections__sort {
+    margin-bottom: unset;
+    padding-bottom: 35px;
+}
+.subscription__terms label {  
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+.subscription-link{
+    margin-top: 24px !important;
+}
+.subscription-link svg {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.post-bg .post-meta .meta p.views{
+    background: transparent url("../img/view-black.svg") no-repeat scroll 0 3px;
+    padding-left: 16px;
+}
+.post-meta .meta p.views{
+    background: transparent url("../img/views.svg") no-repeat scroll 0 5px;       
+    padding-left: 16px;
+}
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -969,5 +1002,21 @@
 
     .form__edit_wrap {
         padding: 50px 0 43px !important;
+    }
+
+    .form_wrap {       
+        padding: 70px 40px;        
+    }
+
+    .subscriptions__types {
+        justify-content: flex-start;
+    }
+
+    .subscription__terms .custom-checkbox + label::before {
+        margin-right: 16px;      
+    }
+
+    .subscription__terms .custom-checkbox + label::before {
+        margin-top: 0;
     }
 }
