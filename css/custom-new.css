@@ -819,11 +819,11 @@
 }
 
 .post-bg .post-meta .meta p.views{
-    background: transparent url("../img/view-black.svg") no-repeat scroll 0 3px;
+    background: transparent url("../img/view-black.svg") no-repeat scroll 0 4px;
     padding-left: 16px;
 }
 .post-meta .meta p.views{
-    background: transparent url("../img/views.svg") no-repeat scroll 0 5px;       
+    background: transparent url("../img/views.svg") no-repeat scroll 0 4px;       
     padding-left: 16px;
 }
 @media screen and (min-width: 992px) {
