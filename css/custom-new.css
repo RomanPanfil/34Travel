@@ -831,6 +831,16 @@
     background: transparent url("../img/views.svg") no-repeat scroll 0 4px;       
     padding-left: 16px;
 }
+
+.post-body h1.post-title {
+    font-family: 'DrukCyr', sans-serif;
+    font-size: 50px;
+    margin-bottom: 36px;
+    line-height: 1em;
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+}
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
