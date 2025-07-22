@@ -832,7 +832,11 @@
     padding-left: 16px;
 }
 
-.post-body h1.post-title {
+.post-body h1.post-title {  
+    text-transform: none;
+}
+
+.post-body.post-body__detail h1.post-title {
     font-family: 'DrukCyr', sans-serif;
     font-size: 50px;
     margin-bottom: 36px;
@@ -848,6 +852,10 @@
 
 .post-meta__mobile  .info-box.info-box__separated {
     align-items: center;
+}
+
+.post-body .b-post__geo {
+    color:#000;
 }
 
 @media screen and (min-width: 992px) {
