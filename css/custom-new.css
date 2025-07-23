@@ -846,7 +846,11 @@
     text-transform: none;
 }
 
-.post-meta__mobile {
+.post-meta__mobile .post-meta__faves {
+    display: none;
+}
+
+.post-meta__mobile .info-box .post-meta-item  {
     display: none;
 }
 
@@ -978,13 +982,13 @@
 }
 
 @media (max-width: 540px) {
-    .post-meta__desktop {
+    .post-meta__desktop .info-box .post-meta-item {
         display: none;
     }
     
-    .post-meta__mobile {
+    .post-meta__mobile .info-box .post-meta-item {
         display: flex;
-    }
+    }    
 }
 
 @media screen and (max-width: 480px) {
@@ -992,7 +996,7 @@
         min-width: unset;
         padding-left: 18px;
         padding-right: 18px;
-    }
+    }.post-meta-item.post-meta-item
 
     .form__group-icon {
         margin-right: 0;
