@@ -434,4 +434,18 @@ $(document).ready(function() {
 			rubricSubscriptionBlurSpan.style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) -30%, ${bgColor} 100%)`;
 		}		
 	})();
+
+	// Клик в шапке по аакаунту
+	(function() {
+		const account = document.querySelector('.header__account_wrap .header__link');    
+		if(!account) return;
+		
+		account.addEventListener('click', (event) => {			
+			const href = account.getAttribute('href');			
+			
+			if (href === '/' || href === '#' || href === '' || !href) {
+				event.preventDefault();				
+			}
+		});
+	})();
 });
