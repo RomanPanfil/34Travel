@@ -866,6 +866,114 @@
     margin-right: auto;
 }
 
+.form-copy {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+.form-link-copy {
+    display: flex;
+    align-items: center;
+    gap: 8px;    
+    cursor: pointer;
+}
+
+.form-link-copy-title {
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.form-link-copy:hover .form-link-copy-title {
+    text-decoration-line: unset;  
+}
+
+.form-link-copy-success {
+    position: absolute;
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #66936B;
+    padding-left: 26px;
+}
+
+.form-accounts {
+    margin-bottom: 72px;
+}
+
+.form-accounts-label {
+    display: inline-block;
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.form-accounts-wrap {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.form-accounts-wrap:last-child {
+    border-bottom: none;
+}
+
+.form-accounts-field {
+    flex-grow: 1;
+}
+
+.form-accounts input {   
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #000000;
+    width: 100%;
+    border: 0;
+    border-right: 1px solid #fff; 
+    padding: 8px 12px;
+    background-color: #E2E2E2;
+    pointer-events: none;
+}
+
+.form-accounts .form-accounts-btn button {
+    border: 0;
+}
+
+.linked-accounts {
+    margin-bottom: 64px;
+    font-family: 'RobotoMono', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+}
+
+.linked-accounts-title {  
+    margin-bottom: 18px;
+}
+
+.linked-accounts-list {
+    list-style-position: inside;
+}
+
+.linked-accounts-item, .linked-accounts-item a {
+    margin-bottom: 10px;
+    color: #7E7E7E;text-decoration: none;
+}
+
+.linked-accounts-item.main, .linked-accounts-item.main a {
+    color: #000000;   
+}
+
+
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -1067,5 +1175,9 @@
 
     .subscription__terms .custom-checkbox + label::before {
         margin-top: 0;
+    }
+
+    .form-accounts .form-accounts-btn button {
+        padding: 15px;
     }
 }
