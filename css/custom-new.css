@@ -973,6 +973,25 @@
     color: #000000;   
 }
 
+.form__field_pass {
+    position: relative;
+}
+
+.password-icon {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 18px;
+    top: 17px;
+   cursor: pointer;
+   transition: opacity .2s ease-in-out;
+}
+
+.password-icon.active {
+    opacity: 1;
+}
+
 
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {

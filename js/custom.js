@@ -448,4 +448,29 @@ $(document).ready(function() {
 			}
 		});
 	})();
+
+	// показ/скрытие пароля
+	(function() {		
+		const passwordIcons = document.querySelectorAll('.password-icon');    
+	
+		passwordIcons.forEach(icon => {
+			icon.addEventListener('click', function() {				
+				const passwordField = this.closest('.form__field_pass');				
+			
+				const passwordInput = passwordField.querySelector('input[type="password"], input[type="text"]');				
+			
+				if (passwordInput.type === 'password') {
+					passwordInput.type = 'text';
+				} else {
+					passwordInput.type = 'password';
+				}
+				
+				const fieldIcons = passwordField.querySelectorAll('.password-icon');				
+
+				fieldIcons.forEach(icon => {
+					icon.classList.toggle('active');
+				});
+			});
+		});
+	})();
 });
