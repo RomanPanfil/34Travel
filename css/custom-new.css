@@ -1196,6 +1196,7 @@
 }
 
 .guide-all-letter {
+    width: 25%;
     flex-grow: 1;
     color: #000000;
     font-family: 'DrukTextCyrHeavy', sans-serif;
@@ -1206,11 +1207,18 @@
 }
 
 .guide-all-col {    
-    width: min(25%, 200px);
+    width: min(33.33%, 200px);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     row-gap: 22px;
+}
+
+.guide-all-columns {
+    width: 75%;
+    flex: 0 0 75%;
+    display: flex;
+    gap: 20px;
 }
 
 .guide-all-item {
@@ -1238,6 +1246,9 @@
     text-decoration: none !important;
 }
 
+.header__projects_header {
+    margin-bottom: 2px;
+}
 
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
@@ -1336,6 +1347,29 @@
         width: 16px;
         height: 16px;     
     }
+
+    .guide-all-list-item {
+        gap: 0;
+    }
+
+    .guide-all-letter {
+        width: 15%;
+        flex: 0 0 15%;
+    }
+
+    .guide-all-columns {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        flex: 0 0 85%;
+    }
+
+    .guide-all-col {
+        width: 100%;      
+        align-items: center;
+    }
+
+    
 }
 
 @media screen and (max-width: 640px) {
@@ -1445,4 +1479,13 @@
     .form-accounts .form-accounts-btn button {
         padding: 15px;
     }
+
+    .hero-image {
+        height: 186px;
+    }
+
+    .hero-image .container .content p,
+    .hero-image .content .ui-btn {
+        display: none;
+    }   
 }
