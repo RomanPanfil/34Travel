@@ -473,4 +473,31 @@ $(document).ready(function() {
 			});
 		});
 	})();
+
+	// плавная прокрутка по клику до нужного блока
+	((function() {		
+		const scrollLinks = document.querySelectorAll('.scroll-link');
+
+		scrollLinks.forEach(link => {
+			link.addEventListener('click', function (e) {
+				e.preventDefault();		
+				
+				let targetId;
+				if (this.hasAttribute('data-scroll-to')) {
+					targetId = this.getAttribute('data-scroll-to');
+				}
+		
+				if (!targetId) return;
+		
+				const targetElement = document.getElementById(targetId);
+				
+				if (targetElement) {					
+					targetElement.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+	}))();
 });

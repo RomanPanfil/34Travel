@@ -862,6 +862,10 @@
     color:#000;
 }
 
+.post-body .b-post__geo a {
+    color:#000;
+}
+
 .post-body .post-img .banner-new {   
     margin-right: auto;
 }
@@ -1250,6 +1254,13 @@
     margin-bottom: 2px;
 }
 
+header .search__form input {
+    height: 36px;
+    padding: 0 10px;
+    background: #fff;
+    width: 260px;
+    border: 1px solid #000;
+}
 @media screen and (min-width: 992px) {
     .subscription__tariffs_item:hover > div {
         background: #F9E855;
@@ -1281,6 +1292,19 @@
     .post-meta .info-box.info-box__separated .author {
         width: auto;
     }
+
+    header .search__form button {
+        border: 1px solid #000;        
+        padding: 0 38px 0 72px;
+        margin: 0 auto;
+        height: 50px;       
+    }
+
+    header .search__form button span {
+        font-family: 'DrukTextCyrHeavy', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1297,9 +1321,19 @@
     }
 }
 
+@media(max-width: 940px) {
+    header .search__form button {
+        background: url(../img/search.svg) no-repeat 34px 14px / 25px 22px !important;
+    }    
+}
+
 @media screen and (max-width: 860px) {
     .bottom__cookies_text {
         margin-right: 0;
+    }
+
+    header {
+        margin-bottom: 24px;
     }
 }
 
@@ -1400,6 +1434,31 @@
     .post-meta__mobile .info-box .post-meta-item {
         display: flex;
     }    
+
+    .search-visible header .search__form {
+        padding: 40px 15px 36px;      
+    }
+
+    .search-visible header .search__form::before {
+        content: '';
+        position: absolute ;
+        top: -120px;
+        right:  0;
+        width: 60px;
+        height: 120px;
+        background-color: #E5E5E5;
+        z-index: -1;
+    } 
+
+    header .search .open__search {
+        position: relative;
+        z-index: 20;
+    }
+
+    .search-visible header .search .open__search {
+        /* background: url(../img/search.svg) no-repeat 34px 14px / 25px 22px !important; */
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.22168' y='14.3621' width='20' height='2' transform='rotate(-45 0.22168 14.3621)' fill='black'/%3E%3Crect x='1.63574' y='0.219971' width='20' height='2' transform='rotate(45 1.63574 0.219971)' fill='black'/%3E%3C/svg%3E%0A");
+    } 
 }
 
 @media screen and (max-width: 480px) {
