@@ -1555,3 +1555,7 @@ header .search__form input {
         display: none;
     }   
 }
+
+.b-news__short__big a:before {
+    transition: background .3s .1s, height 0s;
+}
